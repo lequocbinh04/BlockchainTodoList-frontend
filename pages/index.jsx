@@ -1,5 +1,4 @@
 import Head from "next/head";
-import Image from "next/Image";
 import styles from "../styles/Home.module.css";
 import getWeb3 from "../utils/getWeb3";
 import { useState, useEffect } from "react";
@@ -90,7 +89,7 @@ const Home = () => {
                 }}
             >
                 <div className="flex items-center">
-                    <Image
+                    <img
                         src="/assets/images/logo.png"
                         alt=""
                         width="50"
@@ -115,7 +114,7 @@ const Home = () => {
                                 "polygon(8% 0, 95% 0, 100% 25%, 92% 100%, 5% 100%, 0 75%)",
                         }}
                     >
-                        <Image
+                        <img
                             alt=""
                             src="/assets/images/metamask.svg"
                             width="30"

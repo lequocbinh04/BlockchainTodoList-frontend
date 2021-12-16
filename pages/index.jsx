@@ -129,9 +129,11 @@ const Home = () => {
                         <input
                             type="text"
                             placeholder="Nhập ghi chú"
-                            className="px-8 py-6 bg-gray-100 rounded-2xl focus:outline-2 focus:outline-offset-8 mt-8"
+                            className="px-12 py-6 bg-gray-100 rounded-2xl focus:outline-2 focus:outline-offset-8 mt-8"
                             style={{
                                 width: 400,
+                                clipPath:
+                                    "polygon(8% 0, 95% 0, 100% 25%, 92% 100%, 5% 100%, 0 75%)",
                             }}
                             value={txt}
                             onChange={(e) => setTxt(e.target.value)}

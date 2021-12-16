@@ -1,5 +1,10 @@
 import Web3 from "web3";
-
+declare global {
+    interface Window {
+        ethereum: any;
+        web3: any;
+    }
+}
 const getWeb3 = async () => {
     if (window.ethereum) {
         const web3 = new Web3(window.ethereum);

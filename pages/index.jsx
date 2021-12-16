@@ -1,4 +1,3 @@
-import type { NextPage } from "next";
 import Head from "next/head";
 import Image from "next/Image";
 import styles from "../styles/Home.module.css";
@@ -17,13 +16,13 @@ const connectMetaMask = async () => {
     }
 };
 
-const Home: NextPage = () => {
+const Home = () => {
     const [address, setAddress] = useState("Not connected");
     const [countNote, setCountNote] = useState("Loading...");
     const [note, setNote] = useState([]);
     const [txt, setTxt] = useState("");
     useEffect(() => {
-        const init: any = async () => {
+        const init = async () => {
             const web3 = new Web3(window.ethereum);
             const accounts = await web3.eth.getAccounts();
             if (accounts.length > 0) {

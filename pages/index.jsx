@@ -141,6 +141,10 @@ const Home = () => {
                             placeholder="Nhập việc cần làm"
                             className="px-8 py-5 bg-red-500 ml-6 text-lg text-white rounded-2xl focus:outline-2 focus:outline-offset-8 mt-8"
                             onClick={handleSubmit}
+                            style={{
+                                clipPath:
+                                    "polygon(8% 0, 95% 0, 100% 25%, 92% 100%, 5% 100%, 0 75%)",
+                            }}
                         >
                             Thêm việc cần làm
                         </button>
